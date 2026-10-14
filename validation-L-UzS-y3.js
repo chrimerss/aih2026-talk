@@ -1,0 +1,1 @@
+var e=new URL(`validation-BuKVLJxt.png`,import.meta.url).href;export{e as t};

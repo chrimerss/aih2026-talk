@@ -1,0 +1,16 @@
+
+.cu-section { display: flex; flex-direction: column; justify-content: center;
+}
+.cu-section .kicker {
+  color: var(--cu-gold); font-size: 30px; font-weight: 700;
+  letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.3em;
+}
+.cu-section h1 {
+  color: var(--cu-gray); font-size: 60px; position: relative;
+  padding-bottom: 0.25em; display: inline-block;
+}
+/* The gold rule is a pseudo-element so it can draw itself on arrival. */
+.cu-section h1::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 5px;
+  background: var(--cu-gold); transform-origin: left;
+}

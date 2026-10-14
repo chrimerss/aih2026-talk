@@ -1,0 +1,43 @@
+
+.cu-pie { display: flex; align-items: center; gap: 70px; justify-content: center;
+}
+.cu-pie svg { overflow: visible; flex: none;
+}
+.cu-pie-sweep { transition: stroke-dashoffset 1.3s cubic-bezier(0.45, 0, 0.2, 1);
+}
+.cu-pie-slice { cursor: pointer; transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.cu-pie-slice.hov, .cu-pie-slice.sel { transform: translate(var(--dx), var(--dy));
+}
+.cu-pie-slice.sel path { stroke: #fff; stroke-width: 6;
+}
+.cu-pie-pct { font-family: Arial, Helvetica, sans-serif; font-size: 30px; font-weight: 700; pointer-events: none;
+}
+.cu-pie-side { display: flex; flex-direction: column; gap: 36px; min-width: 520px;
+}
+.cu-pie-legend { display: flex; flex-direction: column; gap: 10px;
+}
+.cu-pie-key {
+  all: unset; cursor: pointer; display: flex; align-items: center; gap: 16px; font: 28px Arial, Helvetica, sans-serif;
+  color: var(--cu-gray); padding: 6px 14px; border-radius: 10px; border-left: 4px solid transparent;
+}
+.cu-pie-key.sel { color: #000; background: var(--card-bg); border-left-color: var(--cu-gold); font-weight: 700;
+}
+.cu-pie-key .sw { width: 26px; height: 26px; border-radius: 6px; flex: none;
+}
+.cu-pie-detail { border-top: 1px solid var(--hair); padding-top: 24px; animation: cu-rise 0.45s var(--ease) both;
+}
+.cu-pie-detail .num { font-size: 96px; font-weight: 700; color: var(--cu-gray); line-height: 1;
+}
+.cu-pie-detail .lab { color: var(--cu-gold); text-transform: uppercase; letter-spacing: 0.06em; font-weight: 700; font-size: 24px; margin-top: 12px;
+}
+.cu-pie-detail .sub { font-size: 26px; margin-top: 10px; color: #000;
+}
+@media (prefers-reduced-motion: reduce) {
+.cu-pie-sweep, .cu-pie-slice { transition: none;
+}
+}
+@media print {
+.cu-pie-sweep { stroke-dashoffset: 0 !important;
+}
+}

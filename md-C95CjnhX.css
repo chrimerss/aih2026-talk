@@ -1,0 +1,49 @@
+
+.cu-probes { --cols: 330px 1fr 1fr 1fr 120px; font-family: Arial, Helvetica, sans-serif; position: relative;
+}
+.cu-probes .pc-head, .cu-probes .pc-row { display: grid; grid-template-columns: var(--cols); column-gap: 28px; align-items: center;
+}
+.cu-probes .pc-head { padding-bottom: 12px; border-bottom: 2px solid #565A5C; margin-bottom: 6px; align-items: end;
+}
+.cu-probes .pc-law-name { font-size: 28px; font-weight: 700; color: #000; display: flex; align-items: center; gap: 12px;
+}
+.cu-probes .pc-law-name .sw { width: 22px; height: 22px; border-radius: 5px;
+}
+.cu-probes .pc-law-n { font-size: 20px; color: var(--cu-gray); margin-top: 4px; padding-left: 34px;
+}
+.cu-probes .pc-total-h { font-size: 22px; color: var(--cu-gray); text-align: right;
+}
+.cu-probes .pc-row { height: 50px; border-bottom: 1px solid #ECEDEE;
+}
+.cu-probes .pc-model { font-family: Menlo, Consolas, 'Courier New', monospace; font-size: 24px; color: #000; white-space: nowrap;
+}
+.cu-probes .pc-cell { display: grid; grid-template-columns: 1fr 64px; column-gap: 12px; align-items: center;
+}
+.cu-probes .pc-track { position: relative; height: 20px;
+}
+.cu-probes .pc-track.full { background: #F4F5F6; border-radius: 4px;
+}
+.cu-probes .pc-scored, .cu-probes .pc-passed { position: absolute; left: 0; top: 0; bottom: 0; border-radius: 4px; transform-origin: left center;
+}
+.cu-probes .pc-scored { background: #DDE0E2;
+}
+.cu-probes .pc-passed { transform: scaleX(0); transition: transform 0.9s cubic-bezier(0.16, 1, 0.3, 1); transition-delay: calc(var(--i) * 45ms + 0.2s);
+}
+.cu-probes.grown .pc-passed { transform: scaleX(1);
+}
+.cu-probes .pc-frac { font-size: 20px; color: var(--cu-gray); text-align: right; font-variant-numeric: tabular-nums;
+}
+.cu-probes .pc-na { color: #B7BABC;
+}
+.cu-probes .pc-total { font-size: 24px; text-align: right; color: #000; font-variant-numeric: tabular-nums;
+}
+.cu-probes .pc-total.full { font-weight: 700;
+}
+@media (prefers-reduced-motion: reduce) {
+.cu-probes .pc-passed { transition: none; transform: none;
+}
+}
+@media print {
+.cu-probes .pc-passed { transform: none !important;
+}
+}

@@ -1,0 +1,69 @@
+
+.cu-process { width: 100%; display: flex; justify-content: center;
+}
+.cu-process svg { height: 100%; width: auto; max-width: 100%; overflow: visible; font-family: Arial, Helvetica, sans-serif;
+}
+.cu-process .pc-t { font-size: 26px; fill: #000;
+}
+.cu-process .pc-t.sm { font-size: 22px;
+}
+.cu-process .pc-s { font-size: 18px; fill: #565A5C;
+}
+.cu-process .pc-sub { font-size: 13px; fill: #565A5C;
+}
+.cu-process .pc-t.bx { font-size: 23px;
+}
+.cu-process .i { font-style: italic;
+}
+.cu-process .pc-ln { stroke: #000; stroke-width: 2.5; fill: none;
+}
+.cu-process .pc-ax { stroke: #000; stroke-width: 2;
+}
+.cu-process .pc-ax.dash { stroke: #9AA0A3; stroke-width: 1.5; stroke-dasharray: 4 4;
+}
+.cu-process .pc-vic { stroke: #000; stroke-width: 2.5; fill: none; stroke-dasharray: 3 5; stroke-linecap: round;
+}
+.cu-process .pc-panel { fill: #fff; stroke: #C9CCCE; stroke-width: 1.5;
+}
+.cu-process .pc-box { stroke: #000; stroke-width: 2.5; fill: none;
+}
+.cu-process .pc-water { fill: #BDD7EE;
+}
+.cu-process .pc-land { font-size: 28px; fill: #fff; paint-order: stroke; stroke: rgba(0, 0, 0, 0.35); stroke-width: 2.5px; stroke-linejoin: round;
+}
+.cu-process .pc-land.pc-blue { fill: #1F5F9E; stroke: rgba(255, 255, 255, 0.85); stroke-width: 4px;
+}
+.cu-process .pc-up { stroke: #fff; stroke-width: 4; stroke-linecap: round;
+}
+.cu-process .pc-up.thin { stroke-width: 3;
+}
+.cu-process .pc-rain { stroke: #9DC3E6; stroke-width: 4; stroke-dasharray: 9 6;
+}
+.cu-process .pc-step { opacity: 0; transition: opacity 0.45s ease;
+}
+.cu-process .pc-step.on { opacity: 1;
+}
+.cu-process .pc-step.still { transition: none;
+}
+.cu-process .pc-mv { transform: translate(var(--x0), var(--y0));
+}
+.cu-process .pc-mv.on { animation: pc-move 2s ease-in-out forwards;
+}
+.cu-process .pc-mv.on.still { animation: none; transform: translate(var(--x1), var(--y1));
+}
+@keyframes pc-move {
+from { transform: translate(var(--x0), var(--y0));
+}
+to { transform: translate(var(--x1), var(--y1));
+}
+}
+@media (prefers-reduced-motion: reduce) {
+.cu-process .pc-mv.on { animation: none; transform: translate(var(--x1), var(--y1));
+}
+}
+@media print {
+.cu-process .pc-step { opacity: 1 !important; transition: none !important;
+}
+.cu-process .pc-mv { animation: none !important; transform: translate(var(--x1), var(--y1)) !important;
+}
+}

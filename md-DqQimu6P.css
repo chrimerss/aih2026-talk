@@ -1,0 +1,45 @@
+
+.cu-timebars { width: 100%; display: flex; justify-content: center;
+}
+.cu-timebars svg { height: 100%; width: auto; max-width: 100%; overflow: visible; font-family: Arial, Helvetica, sans-serif;
+}
+.cu-timebars .tb-tick { font-size: 24px; fill: #565A5C;
+}
+.cu-timebars .tb-axis { font-size: 28px; font-weight: 700; fill: #565A5C;
+}
+.cu-timebars .tb-leg { font-size: 24px; fill: #000;
+}
+.cu-timebars .tb-era-t { font-size: 34px; font-weight: 700; fill: #B39A55; animation: tb-in 0.6s ease both;
+}
+.cu-timebars .tb-era-n { font-size: 30px; fill: #000; animation: tb-in 0.6s ease 0.15s both;
+}
+.cu-timebars .tb-era rect { transition: fill-opacity 0.6s ease;
+}
+.cu-timebars .tb-call { font-size: 26px; font-weight: 700; fill: #000;
+}
+.cu-timebars .tb-down { font-size: 44px; font-weight: 700; fill: #B39A55;
+}
+.cu-timebars .tb-year { font-size: 96px; font-weight: 700; fill: #565A5C; fill-opacity: 0.22;
+}
+.cu-timebars .tb-bar { transform-box: fill-box; transform-origin: bottom; transform: scaleY(0); opacity: 0; transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.2s ease;
+}
+.cu-timebars .tb-bar.on { transform: none; opacity: 1;
+}
+@keyframes tb-in {
+from { opacity: 0;
+}
+to { opacity: 1;
+}
+}
+.cu-timebars .tb-final { animation: tb-in 0.8s ease 0.4s both;
+}
+@media (prefers-reduced-motion: reduce) {
+.cu-timebars .tb-bar { transition: none;
+}
+.cu-timebars .tb-final { animation: none;
+}
+}
+@media print {
+.cu-timebars .tb-bar { transform: none !important; opacity: 1 !important;
+}
+}
