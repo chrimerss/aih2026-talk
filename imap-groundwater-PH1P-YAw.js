@@ -1,0 +1,1 @@
+var e=new URL(`imap-pluvial-BUQjlA7d.jpg`,import.meta.url).href,t=new URL(`imap-fluvial-CyXQ3Pv6.jpg`,import.meta.url).href,n=new URL(`imap-coastal-CxmsLvIl.jpg`,import.meta.url).href,r=new URL(`imap-groundwater-BFYvf4xS.jpg`,import.meta.url).href;export{e as i,n,t as r,r as t};

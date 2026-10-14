@@ -1,0 +1,1 @@
+var e=new URL(`flood-costs-Bn_vmZrM.png`,import.meta.url).href;export{e as t};

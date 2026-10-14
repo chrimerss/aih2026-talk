@@ -1,0 +1,1 @@
+var e=new URL(`densing-law-BLXTb4FC.png`,import.meta.url).href;export{e as t};

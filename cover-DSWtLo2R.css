@@ -1,0 +1,11 @@
+
+.cu-cover {
+  display: flex; flex-direction: column; justify-content: center; text-align: center;
+  padding-top: 60px;
+}
+.cu-cover h1 { color: var(--cu-gray); font-size: 64px; margin-bottom: 0.25em;
+}
+.cu-cover h2 { color: var(--cu-gold); font-size: 36px; font-weight: 400;
+}
+.cu-cover p  { font-size: 28px; line-height: 1.5; margin-top: 1.2em;
+}

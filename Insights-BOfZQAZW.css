@@ -1,0 +1,14 @@
+
+.cu-insights-wrap ul, .cu-insights-wrap ol {
+  list-style: none; margin: 0; padding: 0; counter-reset: ins;
+}
+.slidev-layout .cu-insights-wrap li {
+  counter-increment: ins; display: block; position: relative;
+  padding: 20px 0 20px 76px; border-bottom: 1px solid var(--hair); margin: 0;
+}
+/* Counter is absolutely placed so bold or linked words inside an item stay in
+   one text flow (a grid would turn each inline node into its own column). */
+.slidev-layout .cu-insights-wrap li::before {
+  content: counter(ins, decimal-leading-zero); position: absolute; left: 0; top: 20px;
+  color: var(--cu-gold); font-weight: 700; font-size: 34px; line-height: 1.3;
+}

@@ -1,0 +1,1 @@
+var e=new URL(`flood-types-tus5aER9.jpg`,import.meta.url).href;export{e as t};

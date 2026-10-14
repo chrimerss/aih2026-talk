@@ -1,0 +1,1 @@
+var e=new URL(`aquah-demo-poster-B74GdVGw.jpg`,import.meta.url).href;export{e as t};

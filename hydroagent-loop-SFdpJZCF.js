@@ -1,0 +1,1 @@
+var e=new URL(`hydroagent-loop-Ta2df5hU.png`,import.meta.url).href;export{e as t};

@@ -1,0 +1,5 @@
+
+.cu-bar-row.hl > div:first-child, .cu-bar-row.hl .cu-bar-val { color: var(--cu-black); font-weight: 700;
+}
+.cu-bar-note { display: block; font-size: 20px; color: var(--cu-gray); font-weight: 400;
+}

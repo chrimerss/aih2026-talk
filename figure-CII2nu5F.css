@@ -1,0 +1,5 @@
+
+.cu-figure-body { display: grid; grid-template-columns: var(--split); gap: 60px; align-items: center;
+}
+.cu-figure-fig img { max-height: 640px;
+}

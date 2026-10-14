@@ -1,0 +1,1 @@
+import{H as e,b as t,z as n}from"./modules-shiki-9jfn8OIo.js";import{nt as r}from"./index-Bah4mVpz.js";var i={class:`cu-insights-wrap`},a={__name:`Insights`,setup(a){let{$slidev:o,$nav:s,$clicksContext:c,$clicks:l,$page:u,$renderContext:d,$frontmatter:f}=r();return(r,a)=>(n(),t(`div`,i,[e(r.$slots,`default`)]))}};export{a as t};
